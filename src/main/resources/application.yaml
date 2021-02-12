@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /demo
+  port: 80
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://81.68.198.57:3306/testdb?useUnicode=true&characterEncoding=utf8&useSSL=true&serverTimeZone=GTM2b8
+    username: root
+    password: 123456
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    database: mysql
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+
